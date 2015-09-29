@@ -18,7 +18,8 @@ Comment on mesure, qu’est ce que l’on mesure ?
 * De manière directe :
   * Mesurer la consommation du port USB lorsqu'il est branché via la commande usb-devices
   * Mesurer avec un testeur/enregistreur de port USB [Testeur avec écran](http://www.framboise314.fr/jai-teste-pour-vous-un-testeur-de-port-usb/)
-  * Mesurer sur les pins de la raspberry avec un oscilloscope (via les ports 2 et 6)
+  * Mesurer sur les pins de la raspberry avec un oscilloscope (via les ports 2 et 6) :
+  ![Schéma](https://github.com/benhu/effacious-weasel-green-it/raw/master/schema.png)
 
 * De manière indirecte :
   * Utiliser PowerTop (powertop --html)
