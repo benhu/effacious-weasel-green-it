@@ -15,8 +15,8 @@ Comment on mesure, qu’est ce que l’on mesure ?
 
 
 ## Comment mesure-t-on la consommation électrique d'un Raspberry ?
-* Mesurer la consommation du port USB lorsqu'il est branché via une distribution Linux ou windows
+* Mesurer la consommation du port USB lorsqu'il est branché via la commande usb-devices
 * Mesurer avec un testeur/enregistreur de port USB [Testeur avec écran](http://www.framboise314.fr/jai-teste-pour-vous-un-testeur-de-port-usb/)
-* Utiliser PowerTop
-* Mesurer sur les pins de la raspberry avec un oscilloscope 
+* Utiliser PowerTop (powertop --html)
+* Mesurer sur les pins de la raspberry avec un oscilloscope (via les ports 2 et 6)
 * Script pour mesurer la performance et la consommation [Power and performance measurement](http://raspi.tv/2015/raspberry-pi2-power-and-performance-measurement)
