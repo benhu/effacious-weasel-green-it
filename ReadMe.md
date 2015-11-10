@@ -23,11 +23,13 @@ Comment on mesure, qu’est ce que l’on mesure ?
  * Récupérer le résultat : de manière automatique avec une commande grep :
  
   * Les deux suivantes ont une marge d'erreur peu importe et équivalente car la mesure est réalisée par un outil spécialisé.
-   * Mesurer avec un testeur/enregistreur de port USB ![Testeur avec écran](https://github.com/benhu/effacious-weasel-green-it/raw/master/testeur_usb.jpg)
+
+#### Mesurer avec un testeur/enregistreur de port USB ![Testeur avec écran](https://github.com/benhu/effacious-weasel-green-it/raw/master/testeur_usb.jpg)
  * Matériel nécessaire : Le testeur USB, une alimentation pour le Raspberry, un câble USB
  * Investissement : 6 euros pour le testeur
  * Récupérer le résultat : Noter à la main les résultats
-   * Mesurer sur les pins de la raspberry avec un multimètre (via les pins 2 et 6) :
+
+#### Mesurer sur les pins de la raspberry avec un multimètre (via les pins 2 et 6) :
   ![Schéma](https://github.com/benhu/effacious-weasel-green-it/raw/master/schema.png)
  * Matériel nécessaire : Un multimètre, une alimentation, un câble USB
  * Investissement : 12 euros pour le multimètre
