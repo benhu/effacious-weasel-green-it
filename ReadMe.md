@@ -38,10 +38,12 @@ Comment on mesure, qu’est ce que l’on mesure ?
  * Matériel nécessaire : Un PC sous Linux, un cable USB
  * Investissement : Matériel déjà en possession
  * Récupérer le résultat : de manière automatique avec une commande grep
+ 
 #### Utiliser perf
  * Matériel nécessaire : Un PC sous Linux, un cable USB
  * Investissement : Matériel déjà en possession
  * Récupérer le résultat : de manière automatique avec une commande grep
+
 #### Script pour mesurer la performance et la consommation [Power and performance measurement](http://raspi.tv/2015/raspberry-pi2-power-and-performance-measurement)
  * Matériel nécessaire : Un PC sous Linux avec python, un cable USB
  * Investissement : Matériel déjà en possession
