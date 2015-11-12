@@ -35,12 +35,8 @@ Il possible d'utiliser un oscilloscope numérique afin d'obtenir les données di
 
 ### De manière indirecte :
 #### Utiliser PowerTop (powertop --html)
-Powertop mesure la consommation sur le pc complet, cela comprend donc les ports usb. Ce moyen est donc relativement imprécis. Pour récupérer les résultats, il n'est pas possible d'interragir facilement avec powertop pour récupérer les données de consommation. Pour cela il faut générer une page html (via powertop --html) et ainsi via grep récupérer la consommation du port usb. Cet outils affiche directement la puissance du raspberry. Cette méthode peux être exécutée depuis le raspberry et ainsi on obtient la puissance extimée du raspberry.
- 
-#### Utiliser perf
- * Matériel nécessaire : Un PC sous Linux, un cable USB
- * Investissement : Matériel déjà en possession
- * Récupérer le résultat : de manière automatique avec une commande grep
+Powertop mesure la consommation sur le pc complet, cela comprend donc les ports usb. Ce moyen est donc relativement imprécis. Pour récupérer les résultats, il n'est pas possible d'interragir facilement avec powertop pour récupérer les données de consommation. Pour cela il faut générer une page html (via `powertop --html`) et ainsi via `grep` récupérer la consommation du port usb. Cet outils affiche directement la puissance du raspberry. Cette méthode peux être exécutée depuis le raspberry et ainsi on obtient la puissance extimée du raspberry. Une autre commande peut-être utilisée afin d'obtenir la puissance du raspberry, il s'agit de la commande `perf`.
+
 
 #### Script pour mesurer la performance et la consommation
 Il est possible de récupérer la puissance consommé ainsi que la performance du raspberry directement depuis celui-ci. Cette methode est un script python :
@@ -67,3 +63,6 @@ for i in range(how_many):
     t.start()
 ```
 Cette méthode est donc similaire à l'utilisation de powertop dans le raspberry et offre, en plus, l'avantage de ne pas avoir a parser un fichier html pour obtenir la puissance du raspberry.
+
+## Choix de la solution
+Afin de mesurer la consommation de manière précise, il est préférable d'utiliser la solution avec l'Arduino pour mesurer et alimenter le Raspberry. Cette solution présente l'avantage d'être facilement récupérable de manière numérique et ainsi être en mesure d'être analysable facilement. De manière indirecte la meilleurs solution reste le script python, car il s'agit d'un script, donc facilement modifiable et ainsi être capable d'envoyer ou de stocker les données dans un système adapté.
