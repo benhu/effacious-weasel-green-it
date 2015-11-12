@@ -39,7 +39,7 @@ Comment on mesure, qu’est ce que l’on mesure ?
 #### Utiliser PowerTop (powertop --html)
  * Matériel nécessaire : Un PC sous Linux, un cable USB
  * Investissement : Matériel déjà en possession
- * Récupérer le résultat : de manière automatique avec une commande grep
+ * Récupérer le résultat : de manière automatique avec une commande grep sur le fichier html généré
  
 #### Utiliser perf
  * Matériel nécessaire : Un PC sous Linux, un cable USB
