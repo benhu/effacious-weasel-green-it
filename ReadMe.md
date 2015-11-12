@@ -21,16 +21,21 @@ Cette mesure est la moins précise des trois, car c'est un applicatif qui mesure
 
 #### Mesurer avec un testeur/enregistreur de port USB
 Un testeur de port USB ce présente comme une clé usb mais qui offre la possibilité de connecter un autre péripherique usb.
+
 ![Testeur avec écran](https://github.com/benhu/effacious-weasel-green-it/raw/master/testeur_usb.jpg)
+
 Ce genre d'outils coute peu cher (6 euros sur Amazon), la récupération d'information de consommation est relativement peu aisée, dans la mesure où l'outil ne propose pas nativement la récupération sur un ordinateur, cependant il affiche l'intensité, la tension ainsi que la consoommation du périphérique connecté. Ce genre de testeur peux-être réalisé soit-même grâce a un arduino, dans ce cas là on alimente le raspberry via le GPIO (pin 2 et 6) en utilisant l'arduino et on récupère l'information de consommation via l'arduino. Ce moyen possède un cout cependat plus élevé.
 
 #### Mesurer sur les pins de la raspberry avec un multimètre (via les pins 2 et 6)
 Pour mesurer la consommation, il est possible de mesurer l'intensité au sein du raspberry. Cependant ne pourrons être loggées dans un outil informatique. Pour cet montage il est necessaire de faire l'acquisition d'un multimètre (12 euros sur amazon).
+
 ![Schéma](https://github.com/benhu/effacious-weasel-green-it/raw/master/schema.png)
+
 Il possible d'utiliser un oscilloscope numérique afin d'obtenir les données directement sur informatique.
 
 ### De manière indirecte :
 #### Utiliser PowerTop (powertop --html)
+Powertop mesure la consommation sur le pc complet, cela comprend donc les ports usb. Ce moyen est donc relativement imprécis. Pour récupérer les résultats, il n'est pas possible d'interragir facilement avec powertop pour récupérer les données de consommation. Pour cela il faut générer une page html (via powertop --html) et ainsi via grep récupérer la consommation du port usb. Cet outils affiche directement la puissance du raspberry.
  * Matériel nécessaire : Un PC sous Linux, un cable USB
  * Investissement : Matériel déjà en possession
  * Récupérer le résultat : de manière automatique avec une commande grep sur le fichier html généré
