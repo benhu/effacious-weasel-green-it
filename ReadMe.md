@@ -24,10 +24,10 @@ Un testeur de port USB ce présente comme une clé usb mais qui offre la possibi
 
 ![Testeur avec écran](https://github.com/benhu/effacious-weasel-green-it/raw/master/testeur_usb.jpg)
 
-Ce genre d'outils coute peu cher (6 euros sur Amazon), la récupération d'information de consommation est relativement peu aisée, dans la mesure où l'outil ne propose pas nativement la récupération sur un ordinateur, cependant il affiche l'intensité, la tension ainsi que la consoommation du périphérique connecté. Ce genre de testeur peux-être réalisé soit-même grâce a un arduino, dans ce cas là on alimente le raspberry via le GPIO (pin 2 et 6) en utilisant l'arduino et on récupère l'information de consommation via l'arduino. Ce moyen possède un cout cependat plus élevé.
+Ce genre d'outil coûte peu cher (6 euros sur Amazon), la récupération d'information de consommation est relativement peu aisée, dans la mesure où l'outil ne propose pas nativement la récupération sur un ordinateur, cependant il affiche l'intensité, la tension ainsi que la consommation du périphérique connecté. Ce genre de testeur peux-être réalisé soit-même grâce à un arduino, dans ce cas là on alimente le raspberry via le GPIO (pin 2 et 6) en utilisant l'arduino et on récupère l'information de consommation via l'arduino. Ce moyen possède un coût cependant plus élevé.
 
 #### Mesurer sur les pins de la raspberry avec un multimètre (via les pins 2 et 6)
-Pour mesurer la consommation, il est possible de mesurer l'intensité au sein du raspberry. Cependant ne pourrons être loggées dans un outil informatique. Pour cet montage il est necessaire de faire l'acquisition d'un multimètre (12 euros sur amazon).
+Pour mesurer la consommation, il est possible de mesurer l'intensité au sein du raspberry. Cependant ne pourrons être loggées dans un outil informatique. Pour ce montage il est nécessaire de faire l'acquisition d'un multimètre (12 euros sur amazon).
 
 ![Schéma](https://github.com/benhu/effacious-weasel-green-it/raw/master/schema.png)
 
@@ -35,11 +35,11 @@ Il possible d'utiliser un oscilloscope numérique afin d'obtenir les données di
 
 ### De manière indirecte :
 #### Utiliser PowerTop (powertop --html)
-Powertop mesure la consommation sur le pc complet, cela comprend donc les ports usb. Ce moyen est donc relativement imprécis. Pour récupérer les résultats, il n'est pas possible d'interragir facilement avec powertop pour récupérer les données de consommation. Pour cela il faut générer une page html (via `powertop --html`) et ainsi via `grep` récupérer la consommation du port usb. Cet outils affiche directement la puissance du raspberry. Cette méthode peux être exécutée depuis le raspberry et ainsi on obtient la puissance extimée du raspberry. Une autre commande peut-être utilisée afin d'obtenir la puissance du raspberry, il s'agit de la commande `perf`.
+Powertop mesure la consommation sur le pc complet, cela comprend donc les ports usb. Ce moyen est donc relativement imprécis. Pour récupérer les résultats, il n'est pas possible d'intéragir facilement avec powertop pour récupérer les données de consommation. Pour cela il faut générer une page html (via `powertop --html`) et ainsi via `grep` récupérer la consommation du port usb. Cet outil affiche directement la puissance du raspberry. Cette méthode peux être exécutée depuis le raspberry et ainsi on obtient la puissance estimée du raspberry. Une autre commande peut-être utilisée afin d'obtenir la puissance du raspberry, il s'agit de la commande `perf`.
 
 
 #### Script pour mesurer la performance et la consommation
-Il est possible de récupérer la puissance consommé ainsi que la performance du raspberry directement depuis celui-ci. Cette methode est un script python :
+Il est possible de récupérer la puissance consommée ainsi que la performance du raspberry directement depuis celui-ci. Cette methode est un script python :
 ```
 #!/usr/bin/env python2.7
 import time
