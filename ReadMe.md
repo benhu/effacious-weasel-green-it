@@ -33,7 +33,7 @@ Comment on mesure, qu’est ce que l’on mesure ?
   ![Schéma](https://github.com/benhu/effacious-weasel-green-it/raw/master/schema.png)
  * Matériel nécessaire : Un multimètre, une alimentation, un câble USB
  * Investissement : 12 euros pour le multimètre
- * Récupérer le résultat : Noter à la main les résultats
+ * Récupérer le résultat : Noter à la main les résultats, il est aussi possible d'utiliser un oscilloscope numérique et de récupérer les résultas sur un ordinateur
 
 ### De manière indirecte :
 #### Utiliser PowerTop (powertop --html)
