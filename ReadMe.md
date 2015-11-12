@@ -42,7 +42,7 @@ Powertop mesure la consommation sur le pc complet, cela comprend donc les ports 
  * Investissement : Matériel déjà en possession
  * Récupérer le résultat : de manière automatique avec une commande grep
 
-#### Script pour mesurer la performance et la consommatio
+#### Script pour mesurer la performance et la consommation
 Il est possible de récupérer la puissance consommé ainsi que la performance du raspberry directement depuis celui-ci. Cette methode est un script python :
 ```
 #!/usr/bin/env python2.7
