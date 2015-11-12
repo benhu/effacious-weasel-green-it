@@ -27,7 +27,7 @@ Comment on mesure, qu’est ce que l’on mesure ?
 #### Mesurer avec un testeur/enregistreur de port USB ![Testeur avec écran](https://github.com/benhu/effacious-weasel-green-it/raw/master/testeur_usb.jpg)
  * Matériel nécessaire : Le testeur USB, une alimentation pour le Raspberry, un câble USB
  * Investissement : 6 euros pour le testeur
- * Récupérer le résultat : Noter à la main les résultats
+ * Récupérer le résultat : Noter à la main les résultats, il est possible de faire les mêmes mesures avec un arduino, dans ce cas, les données pourront être loggées
 
 #### Mesurer sur les pins de la raspberry avec un multimètre (via les pins 2 et 6) :
   ![Schéma](https://github.com/benhu/effacious-weasel-green-it/raw/master/schema.png)
